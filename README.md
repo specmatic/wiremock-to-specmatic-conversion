@@ -43,7 +43,7 @@ Notes — quick run examples
 
 - Run Wiremock:
 
-  ```bash
+  ```shell
   docker run -it --rm \
     -p 9090:8080 \
     --name wiremock \
@@ -55,7 +55,7 @@ Notes — quick run examples
 
   Specmatic (Docker) — using `host.docker.internal` to reach Wiremock on the host:
 
-  ```bash
+  ```shell
   docker run --rm -p 8080:8080 \
     -v $(pwd)/specmatic-outdir:/specmatic-outdir \
     specmatic/specmatic:latest \
@@ -66,7 +66,7 @@ Notes — quick run examples
 
   Make requests to the Specmatic proxy (which forwards to Wiremock). This simulates your application making requests to the Specmatic proxy instead of directly to Wiremock.
 
-    ```bash
+    ```shell
     curl -X GET http://localhost:8080/users/octocat
     curl -X GET http://localhost:8080/repos/octocat/Hello-World
     ```
@@ -83,7 +83,7 @@ Run specmatic as a stub server serving the recorded stubs on port 8080.
 _Figure: New setup where Specmatic serves stubs at http://localhost:8080._
 
 
-```bash
+```shell
   docker run --rm -p 8080:8080 \
     -v $(pwd)/specmatic-outdir:/specmatic-outdir \
     specmatic/specmatic:latest \
