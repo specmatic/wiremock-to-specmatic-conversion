@@ -34,7 +34,7 @@ Quick summary:
 
 ### New setup (with Specmatic proxy intercepting traffic)
 
-Introduce a Specmatic proxy between your app and Wiremock so Specmatic can record, validate or convert traffic while forwarding requests to Wiremock.
+Introduce a Specmatic proxy between your app and Wiremock so Specmatic can record, validate or convert traffic while forwarding requests to Wiremock. Your application will continue to make requests to http://localhost:8080, but those requests will now go to the Specmatic proxy, which in turn forwards them to Wiremock running on a different port (e.g., 9090).
 
 ![New setup — Application → Specmatic Proxy → Wiremock](./images/new-setup.jpg)
 
