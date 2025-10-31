@@ -14,7 +14,7 @@ The wiremock stubs in this example contain responses for github user API request
 - `GET /users/octocat`
 - `GET /repos/octocat/Hello-World`
 
-The Wiremock stubs are located in the `wiremock-stubs` directory. You can run the Wiremock server using the following command:
+The Wiremock stubs are located in the `wiremock-stubs` directory.
 
 ## Specmatic proxy — diagrams and quick run notes
 
