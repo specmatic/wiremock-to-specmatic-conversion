@@ -1,0 +1,38 @@
+{
+  "id" : "4d361d03-7390-3320-863c-a7df3abe8502",
+  "request" : {
+    "url" : "/repos/octocat/Hello-World",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-repos-octocat-Hello-World-TfiDZ.json",
+    "headers" : {
+      "X-RateLimit-Resource" : "core",
+      "Server" : "github.com",
+      "X-RateLimit-Used" : "16",
+      "Access-Control-Allow-Origin" : "*",
+      "X-Content-Type-Options" : "nosniff",
+      "X-RateLimit-Reset" : "1761888475",
+      "Last-Modified" : "Thu, 30 Oct 2025 20:10:38 GMT",
+      "x-github-api-version-selected" : "2022-11-28",
+      "Date" : "Fri, 31 Oct 2025 04:49:29 GMT",
+      "Accept-Ranges" : "bytes",
+      "Referrer-Policy" : "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "X-Frame-Options" : "deny",
+      "Strict-Transport-Security" : "max-age=31536000; includeSubdomains; preload",
+      "Access-Control-Expose-Headers" : "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+      "X-RateLimit-Remaining" : "44",
+      "Cache-Control" : "public, max-age=60, s-maxage=60",
+      "X-GitHub-Media-Type" : "github.v3; format=json",
+      "ETag" : "W/\"f64567d33056076b97f12c52af82cb82dfb0e5dfd5bdf6c1cbf3b2520f5ae3d2\"",
+      "Content-Security-Policy" : "default-src 'none'",
+      "Vary" : "Accept,Accept-Encoding, Accept, X-Requested-With",
+      "X-RateLimit-Limit" : "60",
+      "X-XSS-Protection" : "0",
+      "X-GitHub-Request-Id" : "2E6E:267804:24A9A1:3437BA:69043FD9",
+      "Content-Type" : "application/json; charset=utf-8"
+    }
+  },
+  "uuid" : "4d361d03-7390-3320-863c-a7df3abe8502"
+}
