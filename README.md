@@ -4,9 +4,8 @@ This repository demonstrates how you can convert Wiremock stubs to Specmatic stu
 
 ## Prerequisites
 
-- Java 17 or higher
 - Wiremock docker image
-- Specmatic CLI (or docker image)
+- Specmatic docker image
 
 ## Wiremock Stubs
 
