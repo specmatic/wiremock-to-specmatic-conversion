@@ -32,7 +32,7 @@ Quick summary:
 - Wiremock runs in Docker and serves stubbed HTTP responses on port 8080.
 - Your application makes requests directly to http://localhost:8080.
 
-### New setup (with Specmatic proxy intercepting traffic)
+### Setup for migration (with Specmatic proxy intercepting traffic)
 
 Introduce a Specmatic proxy between your app and Wiremock so Specmatic can record, validate or convert traffic while forwarding requests to Wiremock. Your application will continue to make requests to http://localhost:8080, but those requests will now go to the Specmatic proxy, which in turn forwards them to Wiremock running on a different port (e.g., 9090).
 
@@ -73,3 +73,20 @@ Notes — quick run examples
     ```
 
 - Stop recording by stopping the Specmatic proxy (Ctrl+C). The recorded stubs will be available in the `specmatic-outdir` directory.
+- Stop the wiremock server by stopping the Docker container (Ctrl+C).
+
+### New setup (with Specmatic serving stubs)
+
+Run specmatic as a stub server serving the recorded stubs on port 8080.
+
+![Replace Wiremock stubs with Specmatic stubs](./images/replace-wiremock.jpg)
+
+_Figure: New setup where Specmatic serves stubs at http://localhost:8080._
+
+
+```bash
+  docker run --rm -p 8080:8080 \
+    -v $(pwd)/specmatic-outdir:/specmatic-outdir \
+    specmatic/specmatic:latest \
+    stub --port 8080 /specmatic-outdir/proxy_generated.yaml
+```
