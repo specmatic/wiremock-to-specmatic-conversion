@@ -87,5 +87,5 @@ _Figure: New setup where Specmatic serves stubs at http://localhost:8080._
   docker run --rm -p 8080:8080 \
     -v $(pwd)/specmatic-outdir:/specmatic-outdir \
     specmatic/specmatic:latest \
-    stub --port 8080 /specmatic-outdir/proxy_generated.yaml
+    mock --port 8080 /specmatic-outdir/proxy_generated.yaml
 ```
